@@ -34,12 +34,26 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
 	}
 }
 ?>
-<form method="POST">
-	E-mail:<br />
-	<input type="email" name="email" /><br /><br />
 
-	Senha:<br />
-	<input type="password" name="senha" /><br /><br />
+<!DOCTYPE html>
+<html lang="en">
 
-	<input type="submit" value="Entrar"> 
-</form>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+</head>
+
+<body>
+	<form method="POST">
+		E-mail:<br />
+		<input type="email" name="email" /><br /><br />
+
+		Senha:<br />
+		<input type="password" name="senha" /><br /><br />
+
+		<input type="submit" value="Entrar">
+	</form>
+</body>
+
+</html>
