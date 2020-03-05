@@ -41,7 +41,7 @@ if (!empty($_POST['email'])) {
 <html>
 
 <head>
-	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>

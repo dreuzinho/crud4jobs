@@ -28,7 +28,7 @@
 
 <h1>Area interna do sistema</h1>
 <p>Usuario: <?php echo $email; ?> - <a href="sair.php">Sair</a></p>
-<p>Link: http://localhost/regconvite/cadastrar.php?codigo=<?php echo $codigo; ?></p>
+<p>Link: http://localhost/{pasta_local}/cadastrar.php?codigo=<?php echo $codigo; ?></p>
 
 <table border="1" width="100%">
     <tr>
