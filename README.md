@@ -17,8 +17,11 @@ Instalação:
 
 - Clone ou baixe o repo;
 - Crie o banco de dados mySQL;
+
 ```CREATE DATABASE `crud4jobs`;```
+
 ```CREATE TABLE `usuarios` (`id` INT NOT NULL AUTO_INCREMENT, `email` VARCHAR(50) NOT NULL, `senha` VARCHAR(50) NOT NULL, `codigo` VARCHAR(20) NOT NULL, PRIMARY KEY (`id`));```
+
 ```INSERT INTO `usuarios` (`id`, `email`, `senha`, `codigo`) VALUES (NULL, 'test@mail.com', MD5('123'), 'admin');```
 
 Feito com am💜r por **Vinicius Lima**
