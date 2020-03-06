@@ -3,7 +3,7 @@ session_start();
 require 'config.php';
 
 if (empty($_SESSION['logado'])) {
-    header("Location: login.html");
+    header("Location: login.php");
     exit;
 }
 

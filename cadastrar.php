@@ -9,11 +9,11 @@ if (!empty($_GET['codigo'])) {
 	$sql = $pdo->query($sql);
 
 	if ($sql->rowCount() == 0) {
-		header("Location: login.html");
+		header("Location: login.php");
 		exit;
 	}
 } else {
-	header("Location: login.html");
+	header("Location: login.php");
 	exit;
 }
 
@@ -42,23 +42,32 @@ if (!empty($_POST['email'])) {
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-	<h3>Cadastrar</h3>
-
-	<form method="POST">
-		E-mail:<br />
-		<input type="email" name="email" /><br /><br />
-
-		Senha:<br />
-		<input type="password" name="senha" /><br /><br />
-
-		<input type="submit" value="Cadastrar" />
-	</form>
+    <div class="container">
+        <form method="POST" action="cadastrar.php">
+            <div>
+                <img src="./assets/images/cadastro-image.png" alt="Logo" class="logo">
+            </div>
+            <div id="labels">
+                <div class="item">
+                    <input class="label" type="email" name="email" placeholder="Email" />
+                </div>
+                <div class="item">
+                    <input class="label" type="password" name="senha" placeholder="Senha" />
+                </div>
+                <div class="buttom">
+                    <input class="button" type="submit" value="Cadastrar" />
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
 </body>
 
 </html>
