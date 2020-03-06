@@ -50,7 +50,7 @@ if (!empty($_POST['email'])) {
 
 <body>
     <div class="container">
-        <form method="POST" action="cadastrar.php">
+        <form method="POST">
             <div>
                 <img src="./assets/images/cadastro-image.png" alt="Logo" class="logo">
             </div>
